@@ -10,10 +10,12 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
+    "body-parser": "^1.20.2",
     "dotenv": "^16.4.5",
     "express": "^4.19.2",
     "jsonwebtoken": "^9.0.2",
     "middleware": "^1.0.0",
+    "mysql": "github:mysqljs/mysql",
     "nodemon": "^3.1.4"
   }
 }
