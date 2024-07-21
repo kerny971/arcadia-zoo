@@ -1,0 +1,36 @@
+ENDPOINTS
+
+- Service
+    - read
+    - create
+    - delete
+
+- habitats
+    - read
+    - create
+    - delete
+
+- animaux
+    - read
+    - create
+    - delete
+
+- horaires
+    - read
+    - update
+
+- rapport veterinaires
+    - create
+
+- avis
+    - create
+    - update
+
+- connexion
+    - create
+
+- employe
+    - create
+
+- contact
+    - create
