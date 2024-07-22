@@ -51,7 +51,7 @@
         </div>
 
 
-        <nav id="nav_menu" class="d-none menu-nav z-1 position-fixed top-0 start-0 h-100 w-100 bg-secondary-subtle p-3">
+        <nav id="nav_menu" class="d-none menu-nav position-fixed top-0 start-0 h-100 w-100 bg-secondary-subtle p-3">
             <div class="container">
                 <div class="d-flex justify-content-between">
                     <div class="d-flex mb-3">
@@ -98,72 +98,25 @@
     </header>
 
 
-    <div class="main">
-        <div class="landing position-relative p-3">
-            <h1 class="display-2 text-center position-absolute start-0 top-50 w-100 text-light fst-italic">
-                Bienvenu au zoo
-                <div class="fw-bold text-decoration-underline">ARCADIA</div>
-            </h1>
-        </div>
-        <div class="container py-5 px-4">
-            <div class="about py-5">
-                <h2 class="fw-semibold text-decoration-underline mb-4">Le Zoo ARCADIA</h2>
-                <div class="px-3">
-                    <p>
-                        Lorem Ipsum is simply dummy text of the printing and  typesetting industry. Lorem Ipsum has been the industry's standard dummy  text ever since the 1500s, when an unknown printer took a galley of  type and scrambled it to make a type specimen book. 
-                    </p>
-
-                    <p>
-                        It has survived not  only five centuries, but also the leap into electronic typesetting,  remaining essentially unchanged. 
-                    </p>
-                    <p>
-                        It was popularised in the 1960s with  the release of Letraset sheets containing Lorem Ipsum passages, and more  recently with desktop publishing software like Aldus PageMaker  including versions of Lorem Ipsum.
-                    </p>
+    <div class="main px-2 py-5">
+        <div class="container">
+            <form id="contact_form">
+                <div class="form-group mb-3">
+                    <label for="email">Email</label>
+                    <input type="text" class="form-control" id="nom" aria-describedby="nom" placeholder="Enter nom...">
                 </div>
-            </div>
-            <div class="services py-5">
-                <h2 class="fw-semibold text-decoration-underline mb-4">Les services</h2>
-                <div id="services_list" class="row justify-content-center">
-                    <div class="col-12 col-sm-6 col-lg-4 text-center text-decoration-none text-dark">
-                        <i class="bi bi-plus-lg display-3"></i>
-                        <div>Restauration</div>
-                    </div>
+                <div class="form-group mb-3">
+                    <label for="title">Sujet</label>
+                    <input type="text" class="form-control" id="title" aria-describedby="title" placeholder="Enter sujet...">
                 </div>
-                <div class="text-center mt-5">
-                    <a href="/services.html" class="btn btn-secondary btn-lg" type="button">Tout les services</a>
+                <div class="form-group mb-3">
+                    <label for="description">Description</label>
+                    <textarea class="form-control" rows="5" id="description" placeholder="Description"></textarea>
                 </div>
-            </div>
-            <div class="avis py-5">
-                <h2 class="fw-semibold text-decoration-underline mb-4">Laisser un avis</h2>
-                <form id="submit_avis">
-                    <div class="form-group mb-3">
-                        <label for="pseudo">Pseudo</label>
-                        <input type="text" class="form-control" id="pseudo" aria-describedby="pseudo" placeholder="Enter pseudo">
-                    </div>
-                    <div class="form-group mb-3">
-                        <label for="avis">Avis</label>
-                        <textarea class="form-control" rows="5" id="avis" placeholder="Mon avis"></textarea>
-                    </div>
-                    <div class="d-grid gap-2">
-                        <button class="btn btn-outline-dark" type="submit">Laissez un avis</button>
-                    </div>
-                </form>
-            </div>
-            <div class="avis-list py-5">
-                <h2 class="fw-semibold text-decoration-underline mb-4">Les avis</h2>
-                <div class="row justify-content-around">
-                    <div class="col-12 col-md-5 text-center py-4">
-                        <i class="bi bi-person-fill fs-1"></i>
-                        <div>Tony</div>
-                        <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, fugiat atque! Consequatur nostrum mollitia autem eos architecto? Nemo corrupti dignissimos obcaecati nulla at tenetur, dolore deserunt doloremque voluptatem minima sed!</div>
-                    </div>
-                    <div class="col-12 col-md-5 text-center py-4">
-                        <i class="bi bi-person-fill fs-1"></i>
-                        <div>Tony</div>
-                        <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, fugiat atque! Consequatur nostrum mollitia autem eos architecto? Nemo corrupti dignissimos obcaecati nulla at tenetur, dolore deserunt doloremque voluptatem minima sed!</div>
-                    </div>
+                <div class="d-grid gap-2">
+                    <button class="btn btn-outline-dark" type="submit">Laissez un avis</button>
                 </div>
-            </div>
+            </form>
         </div>
     </div>
 
@@ -179,7 +132,7 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
-    <script src="js/script.js"></script>
+    <script src="js/contact.js"></script>
     <script>
         const btnMenuElementHTML = document.querySelector('#btn_menu');
         const navMenuElementHTML = document.querySelector('#nav_menu');

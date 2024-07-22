@@ -3,8 +3,10 @@ require('dotenv').config();
 const bodyParser            = require('body-parser');
 const express               = require('express');
 const DashboardController   = require('./src/controller/DashboardController');
+const PublicController      = require('./src/controller/PublicController')
 const jwt                   = require('jsonwebtoken');
 const db                    = require('./src/functions/Database');
+const cors                  = require('cors');
 
 // Express
 const app = express();
@@ -16,6 +18,7 @@ var jsonParser = bodyParser.json()
 var urlencodedParser = bodyParser.urlencoded({ extended: true })
 
 
+app.use(cors())
 
 app.use('/', jsonParser);
 app.use('/', urlencodedParser);
@@ -101,6 +104,8 @@ app.use('/dashboard', (req, res, next) => {
     })
 })
 app.use('/dashboard', DashboardController);
+
+app.use('/public', PublicController);
 
 const listenPort = process.env.APP_LISTEN
 app.listen(listenPort);

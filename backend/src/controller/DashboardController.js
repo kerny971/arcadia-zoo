@@ -208,7 +208,6 @@ router.post('/habitat', (req, res) => {
                     }
                 })
             } else {
-                db.end();
                 res.status(200).json({
                     status: {
                         http_code: 200,
@@ -248,9 +247,7 @@ router.delete('/habitat', (req, res) => {
                         message: 'Une erreur serveur s\'est produite...',
                     }
                 })
-            } else {
-                db.end();
-                res.status(200).json({
+            } else {                res.status(200).json({
                     status: {
                         http_code: 200,
                         error: false,
@@ -279,7 +276,6 @@ router.get('/habitat', (req, res) => {
                 }
             })
         } else {
-            db.end();
             res.status(200).json({
                 status: {
                     http_code: 200,
@@ -315,7 +311,6 @@ router.get('/animal', (req, res) => {
                 }
             })
         } else {
-            db.end();
             res.status(200).json({
                 status: {
                     http_code: 200,
@@ -356,7 +351,6 @@ router.post('/animal', (req, res) => {
                     }
                 })
             } else {
-                db.end();
                 res.status(200).json({
                     status: {
                         http_code: 200,
@@ -397,7 +391,6 @@ router.delete('/animal', (req, res) => {
                     }
                 })
             } else {
-                db.end();
                 res.status(200).json({
                     status: {
                         http_code: 200,

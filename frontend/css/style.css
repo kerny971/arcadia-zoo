@@ -1,0 +1,26 @@
+body {
+    min-width: 300px;
+}
+
+.main {
+    min-height: 80vh;
+}
+
+footer {
+    margin-bottom: 2rem;
+}
+
+.o-fs-8 {
+    font-size: 0.7rem;
+}
+
+.landing {
+    background: url('../assets/images/landing.png');
+    background-size: cover;
+    background-position: center;
+    min-height: 70vh;
+}
+
+.menu-nav {
+    z-index: 2;
+}
