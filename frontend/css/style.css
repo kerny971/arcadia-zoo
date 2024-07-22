@@ -24,3 +24,7 @@ footer {
 .menu-nav {
     z-index: 2;
 }
+
+#submit_avis {
+    max-width: 400px;
+}
